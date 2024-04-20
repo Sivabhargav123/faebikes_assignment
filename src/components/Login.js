@@ -34,6 +34,7 @@ const Login = ({ onLogin }) => {
             <button className="login-button" onClick={handleLogin}>Login</button>
           ) : (
             <div>
+              <h1 className='headings'>Mobile No :</h1>
               <input
                 className="input-field"
                 type="text"
@@ -42,6 +43,8 @@ const Login = ({ onLogin }) => {
                 onChange={(e) => setPhoneNumber(e.target.value)}
               />
               {otpSent && (
+                <div>
+                 <h1 className='headings'>Enter OTP :</h1>
                 <input
                   className="input-field"
                   type="text"
@@ -49,6 +52,7 @@ const Login = ({ onLogin }) => {
                   value={otp}
                   onChange={(e) => setOtp(e.target.value)}
                 />
+                </div>
               )}
               <button className="login-button" onClick={handleOtpSubmit}>{otpSent ? 'Submit OTP' : 'Send OTP'}</button>
             </div>

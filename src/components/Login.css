@@ -60,3 +60,7 @@
     color: white; /* Change text color to contrast with the gradient */
   }
   
+  .headings{
+    font-size: 15px;
+    color: wheat;
+  }
